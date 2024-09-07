@@ -12,14 +12,12 @@ export default {
         "white-opacity-80": "rgba(255, 255, 255, 0.5)", // #FFFFFF80
       },
       fontFamily: {
-        sans: ['"Source Code Pro"', "monospace"],
+        sansFirst: ['"Source Code Pro"', "monospace"],
         sansSec: ['"Sora"', "sans-serif"],
       },
       screens: {
         "burger-menu-825": "825px", // Добавление кастомного медиа-запроса
-      },
-      backgroundImageRobot: {
-        'custom-image': "url('')",
+        'breakpoint910': { 'max': '910px' },
       },
     },
   },

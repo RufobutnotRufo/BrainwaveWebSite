@@ -1,14 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 body {
     background-color: #26242C;
 }
+
+.width-height {
+    border: solid black 10px;
+}
+
+
 
 * {
     box-sizing: border-box;
@@ -32,8 +36,45 @@ li {
 .container {
     max-width: 1840px;
     margin: 0 auto;
+    padding: 20px;
+    padding-right: 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SiteIntroduction-after-effect {
+    position: relative;
+}
+
+.SiteIntroduction-after-effect::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    /* Изменено с right на left для правильного позиционирования */
+    background: linear-gradient(to right, #FFC876, #ACFF8E, #9453FF, #FF89C2);
+    /* Правильный формат градиента */
+    border-radius: 10px;
+}
 
 
 /* font-family: "Source Code Pro", monospace; */
